@@ -37,7 +37,9 @@ public class TaskStyleContextListener implements ServletContextListener {
 		// Add our CSS file
 		semanticCMS.addCssLink("/pragmatickm-task-style/styles.css");
 		// Add link CSS class
-		semanticCMS.addLinkCssClass(Task.class, "pragmatickm-task-task-link");
+		semanticCMS.addLinkCssClass(Task.class, "pragmatickm-task-link");
+		// Add list item CSS class
+		semanticCMS.addListItemCssClass(Task.class, "pragmatickm-task-list-item");
 	}
 
 	@Override

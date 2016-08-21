@@ -20,8 +20,8 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses/>.
  */
-span.pragmatickm-task-task-link,
-a.pragmatickm-task-task-link {
+span.pragmatickm-task-link,
+a.pragmatickm-task-link {
 	display: inline-block;
 	background-repeat: no-repeat;
 	background-position: left center;
@@ -30,4 +30,8 @@ a.pragmatickm-task-task-link {
 	background-size: 24px 24px;
 	/* TODO: Find properly licensed images and include them in this styles package */
 	background-image: url(../images/task.png);
+}
+li.pragmatickm-task-list-item {
+	/* TODO: Find properly licensed images and include them in this styles package */
+	list-style-image: url('../images/list-item/16x16/task.png');
 }
