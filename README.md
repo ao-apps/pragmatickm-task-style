@@ -3,6 +3,7 @@ Default style for tasks nested within [SemanticCMS](https://semanticcms.com/) pa
 
 ## Project Links
 * [Project Home](https://pragmatickm.com/task/style/)
+* [Changelog](https://pragmatickm.com/task/style/changelog)
 * [API Docs](https://pragmatickm.com/task/style/apidocs/)
 * [Maven Repository](scpexe://private.cvs.aoindustries.com/var/maven2/pragmatickm)
 * [Git](ssh://private.cvs.aoindustries.com/var/git/pragmatickm-task-style)
