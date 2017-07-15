@@ -81,7 +81,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 							<artifactId>maven-javadoc-plugin</artifactId>
 							<configuration>
 								<links>
-									<link>https://docs.oracle.com/javaee/6/api/</link>
+									<link>${javac.link.javaeeApi.6}</link>
 									<link>https://pragmatickm.com/task/model/apidocs/</link>
 									<link>https://semanticcms.com/core/servlet/apidocs/</link>
 								</links>
