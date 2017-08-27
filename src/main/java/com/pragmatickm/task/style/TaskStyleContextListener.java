@@ -1,6 +1,6 @@
 /*
  * pragmatickm-task-style - Default style for tasks nested within SemanticCMS pages and elements.
- * Copyright (C) 2016  AO Industries, Inc.
+ * Copyright (C) 2016, 2017  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -23,23 +23,23 @@
 package com.pragmatickm.task.style;
 
 import com.pragmatickm.task.model.Task;
-import com.semanticcms.core.servlet.SemanticCMS;
+import com.semanticcms.core.renderer.html.HtmlRenderer;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener("Registers the styles for tasks in SemanticCMS.")
+@WebListener("Registers the styles for tasks in HtmlRenderer.")
 public class TaskStyleContextListener implements ServletContextListener {
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
-		SemanticCMS semanticCMS = SemanticCMS.getInstance(event.getServletContext());
+		HtmlRenderer htmlRenderer = HtmlRenderer.getInstance(event.getServletContext());
 		// Add our CSS file
-		semanticCMS.addCssLink("/pragmatickm-task-style/styles.css");
+		htmlRenderer.addCssLink("/pragmatickm-task-style/styles.css");
 		// Add link CSS class
-		semanticCMS.addLinkCssClass(Task.class, "pragmatickm-task-link");
+		htmlRenderer.addLinkCssClass(Task.class, "pragmatickm-task-link");
 		// Add list item CSS class
-		semanticCMS.addListItemCssClass(Task.class, "pragmatickm-task-list-item");
+		htmlRenderer.addListItemCssClass(Task.class, "pragmatickm-task-list-item");
 	}
 
 	@Override

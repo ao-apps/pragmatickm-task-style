@@ -37,7 +37,7 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-25T18:33:44-0500"
-		dateModified="2017-07-27T00:59:53-0500"
+		dateModified="2017-08-27T16:38:05-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.pragmatickm:pragmatickm-task-style:pom.version}" />
@@ -52,7 +52,11 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 				groupId="@{documented.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{documented.scm.url}"
-			/>
+			>
+				<ul>
+					<li>Updated for <ao:a href="https://semanticcms.com/">SemanticCMS</ao:a> 2 compatibility.</li>
+				</ul>
+			</changlog:release>
 		</c:if>
 
 		<changelog:release
