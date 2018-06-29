@@ -57,21 +57,19 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 		<profile>
 			<id>release</id>
 			<build>
-				<pluginManagement>
-					<plugins>
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId><artifactId>maven-javadoc-plugin</artifactId>
-							<configuration>
-								<links>
-									<link>${javac.link.javaApi}</link>
-									<link>${javac.link.javaeeApi.6}</link>
-									<link>https://pragmatickm.com/task/model/apidocs/</link>
-									<link>https://semanticcms.com/core/renderer/html/apidocs/</link>
-								</links>
-							</configuration>
-						</plugin>
-					</plugins>
-				</pluginManagement>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId><artifactId>maven-javadoc-plugin</artifactId>
+						<configuration>
+							<links>
+								<link>${javac.link.javaApi}</link>
+								<link>${javac.link.javaeeApi.6}</link>
+								<link>https://pragmatickm.com/task/model/apidocs</link>
+								<link>https://semanticcms.com/core/renderer/html/apidocs</link>
+							</links>
+						</configuration>
+					</plugin>
+				</plugins>
 			</build>
 		</profile>
 	</profiles>
