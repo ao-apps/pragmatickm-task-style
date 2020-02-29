@@ -20,33 +20,20 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses/>.
  */
-span.pragmatickm-task-link,
-a.pragmatickm-task-link {
-	display: inline-block;
-	background-repeat: no-repeat;
-	background-position: left center;
-	padding-left: 25px;
-	min-height: 24px;
-	background-size: 24px 24px;
-	/* TODO: Find properly licensed images and include them in this styles package */
-	background-image: url(../docs-taglib/images/task.png);
-}
-li.pragmatickm-task-list-item {
-	/* TODO: Find properly licensed images and include them in this styles package */
-	list-style-image: url('../docs-taglib/images/list-item/16x16/task.png');
-}
-
 :not(li) > table.pragmatickm-task {
 	float:left;
 	margin-right: 1em;
 }
 table.pragmatickm-task {
 	margin-bottom: 1em;
-}
-table.pragmatickm-task {
 	width: 340px;
 }
 
+nav#pragmatickm-task-view-user-list {
+	clear: both;
+	padding-bottom: 6px;
+	margin-bottom: 6px;
+}
 /* Exists for page outlines, but we don't want to see it */
 nav#pragmatickm-task-view-user-list > h2 {
 	display: none;
@@ -64,60 +51,54 @@ ol.pragmatickm-task-view-task-table-do-afters {
 	padding: 0px;
 }
 
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-priority-low,
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-priority-medium,
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-priority-high,
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-priority-critical {
-	font-weight: bold;
-}
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-priority-future {
+.pragmatickm-task-priority-future {
 	color: #c0c0c0;
 }
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-priority-low {
+.pragmatickm-task-priority-low {
+	font-weight: bold;
 	color: #007c00;
 }
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-priority-medium {
+.pragmatickm-task-priority-medium {
+	font-weight: bold;
 	color: #0000ff;
 }
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-priority-high {
+.pragmatickm-task-priority-high {
+	font-weight: bold;
 	color: #b28c00;
 }
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-priority-critical {
+.pragmatickm-task-priority-critical {
+	font-weight: bold;
 	color: red;
 }
 
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-status-new {
+.pragmatickm-task-status-new {
 	font-weight: bold;
 	color: green;
 }
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-status-new-waiting-do-after {
+.pragmatickm-task-status-new-waiting-do-after,
+.pragmatickm-task-status-in-future {
 	/* No styles */
 }
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-status-in-future {
-	/* No styles */
-}
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-status-due-today {
+.pragmatickm-task-status-due-today {
 	font-weight: bold;
 	color: green;
 }
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-status-due-today-waiting-do-after {
+.pragmatickm-task-status-due-today-waiting-do-after {
 	/* No styles */
 }
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-status-late {
+.pragmatickm-task-status-late {
 	font-weight: bold;
 	color: red;
 }
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-status-late-waiting-do-after {
+.pragmatickm-task-status-late-waiting-do-after {
 	font-weight: bold;
 	color: red;
 }
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-status-progress,
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-status-progress-waiting-do-after {
+.pragmatickm-task-status-progress,
+.pragmatickm-task-status-progress-waiting-do-after {
 	color: blue;
 }
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-status-completed {
-	/* No styles */
-}
-table.pragmatickm-task > tbody > tr > td.pragmatickm-task-status-missed {
+.pragmatickm-task-status-completed,
+.pragmatickm-task-status-missed {
 	/* No styles */
 }
