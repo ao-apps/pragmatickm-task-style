@@ -70,6 +70,8 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 								<!-- Java EE -->
 								<link>${javac.link.javaeeApi.6}</link>
 								<!-- Direct -->
+								<link>https://aoindustries.com/ao-web-resources/registry/apidocs/</link>
+								<link>https://aoindustries.com/ao-web-resources/servlet/apidocs/</link>
 								<link>https://pragmatickm.com/task/model/apidocs/</link>
 								<link>https://semanticcms.com/core/servlet/apidocs/</link>
 							</links>
@@ -90,6 +92,12 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 			</dependency>
 			<!-- Direct -->
 			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-web-resources-registry</artifactId><version>0.1.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+			</dependency>
+			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-web-resources-servlet</artifactId><version>0.1.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+			</dependency>
+			<dependency>
 				<groupId>com.pragmatickm</groupId><artifactId>pragmatickm-task-model</artifactId><version>1.5.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
@@ -105,6 +113,12 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 			<scope>provided</scope>
 		</dependency>
 		<!-- Direct -->
+		<dependency>
+			<groupId>com.aoindustries</groupId><artifactId>ao-web-resources-registry</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.aoindustries</groupId><artifactId>ao-web-resources-servlet</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>com.pragmatickm</groupId><artifactId>pragmatickm-task-model</artifactId>
 		</dependency>

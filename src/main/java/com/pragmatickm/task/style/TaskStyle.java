@@ -22,20 +22,28 @@
  */
 package com.pragmatickm.task.style;
 
+import com.aoindustries.web.resources.registry.Style;
+import com.aoindustries.web.resources.servlet.RegistryEE;
 import com.pragmatickm.task.model.Task;
 import com.semanticcms.core.servlet.SemanticCMS;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener("Registers the styles for tasks in SemanticCMS.")
-public class Initializer implements ServletContextListener {
+@WebListener("Registers the styles for tasks in SemanticCMS in RegistryEE and SemanticCMS.")
+public class TaskStyle implements ServletContextListener {
+
+	public static final Style PRAGMATICKM_TASK = new Style("/pragmatickm-task-style/pragmatickm-task.css");
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
-		SemanticCMS semanticCMS = SemanticCMS.getInstance(event.getServletContext());
+		ServletContext servletContext = event.getServletContext();
+
 		// Add our CSS file
-		semanticCMS.addCssLink("/pragmatickm-task-style/pragmatickm-task.css");
+		RegistryEE.get(servletContext).global.styles.add(PRAGMATICKM_TASK);
+
+		SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
 		// Add link CSS class
 		semanticCMS.addLinkCssClass(Task.class, "pragmatickm-task-link");
 		// Add list item CSS class
