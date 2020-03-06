@@ -22,6 +22,7 @@
  */
 package com.pragmatickm.task.style;
 
+import com.aoindustries.web.resources.registry.Group;
 import com.aoindustries.web.resources.registry.Style;
 import com.aoindustries.web.resources.servlet.RegistryEE;
 import com.pragmatickm.task.model.Task;
@@ -34,6 +35,9 @@ import javax.servlet.annotation.WebListener;
 @WebListener("Registers the styles for tasks in SemanticCMS in RegistryEE and SemanticCMS.")
 public class TaskStyle implements ServletContextListener {
 
+	public static final Group.Name RESOURCE_GROUP = new Group.Name("pragmatickm-task-style");
+
+	// TODO: Change to Group.Name once we have group-level ordering
 	public static final Style PRAGMATICKM_TASK = new Style("/pragmatickm-task-style/pragmatickm-task.css");
 
 	@Override
@@ -41,7 +45,11 @@ public class TaskStyle implements ServletContextListener {
 		ServletContext servletContext = event.getServletContext();
 
 		// Add our CSS file
-		RegistryEE.get(servletContext).global.styles.add(PRAGMATICKM_TASK);
+		RegistryEE.Application.get(servletContext)
+			.activate(RESOURCE_GROUP) // TODO: Activate as-needed
+			.getGroup(RESOURCE_GROUP)
+			.styles
+			.add(PRAGMATICKM_TASK);
 
 		SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
 		// Add link CSS class
