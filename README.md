@@ -30,7 +30,7 @@ Default style for tasks nested within [SemanticCMS](https://github.com/aoindustr
 * [Project Home](https://pragmatickm.com/task/style/)
 * [Changelog](https://pragmatickm.com/task/style/changelog)
 * [API Docs](https://pragmatickm.com/task/style/apidocs/)
-* [Maven Central Repository](https://search.maven.org/#search%7Cgav%7C1%7Cg:%22com.pragmatickm%22%20AND%20a:%22pragmatickm-task-style%22)
+* [Maven Central Repository](https://search.maven.org/artifact/com.pragmatickm/pragmatickm-task-style)
 * [GitHub](https://github.com/aoindustries/pragmatickm-task-style)
 
 ## Contact Us
