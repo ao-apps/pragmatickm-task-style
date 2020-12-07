@@ -39,16 +39,10 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 		datePublished="2017-07-25T18:33:44-0500"
 		dateModified="2020-03-28T22:18:41-05:00"
 	>
-		<!-- The current snapshot, unreleased version -->
-		<c:set var="version" value="@{com.pragmatickm:pragmatickm-task-style:pom.version}" />
-		<ao:assert
-			test="${!fn:startsWith(version, '@')}"
-			message="Version not substituted: #{version}"
-		/>
-		<c:if test="${fn:endsWith(version, '-SNAPSHOT') and !fn:endsWith(version, '-POST-SNAPSHOT')}">
+		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
 				projectName="@{documented.name}"
-				version="#{version}"
+				version="@{project.version}"
 				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{project.scm.url}"
