@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 pragmatickm-task-style - Default style for tasks nested within SemanticCMS pages and elements.
-Copyright (C) 2017, 2019, 2020  AO Industries, Inc.
+Copyright (C) 2017, 2019, 2020, 2021  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -36,8 +36,8 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 		title="@{documented.name} Changelog"
 		shortTitle="Changelog"
 		tocLevels="1"
-		datePublished="2017-07-25T18:33:44-0500"
-		dateModified="2020-03-28T22:18:41-05:00"
+		datePublished="2017-07-25T18:33:44-05:00"
+		dateModified="2021-05-22T13:07:02-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -49,6 +49,7 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 			>
 				<ul>
 					<li>Updated for <ao:a href="https://semanticcms.com/">SemanticCMS</ao:a> 2 compatibility.</li>
+					<li>Updated to <ao:a rel="nofollow" href="https://www.oracle.com/java/technologies/javaee/javaeetechnologies.html#javaee7">Java™ EE 7 Web Profile</ao:a> (Servlet 3.1, JSP 2.3, EL 3.0, and JSTL 1.2).</li>
 				</ul>
 			</changelog:release>
 		</c:if>
@@ -74,7 +75,7 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.3.5"
-			datePublished="2019-06-24T01:28:01-0500"
+			datePublished="2019-06-24T01:28:01-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			scmUrl="@{project.scm.url}"
@@ -93,7 +94,7 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.3.4"
-			datePublished="2017-07-27T00:59:53-0500"
+			datePublished="2017-07-27T00:59:53-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			scmUrl="@{project.scm.url}"
@@ -107,7 +108,7 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.3.3"
-			datePublished="2017-07-20T18:59:02-0500"
+			datePublished="2017-07-20T18:59:02-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			repository="https://aorepo.org/maven2/"
@@ -122,7 +123,7 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.3.2"
-			datePublished="2016-11-16T22:19:13-0600"
+			datePublished="2016-11-16T22:19:13-06:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			repository="https://aorepo.org/maven2/"
@@ -138,7 +139,7 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.3.1"
-			datePublished="2016-10-20T20:25:47-0500"
+			datePublished="2016-10-20T20:25:47-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			repository="https://aorepo.org/maven2/"
@@ -153,7 +154,7 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.3.0"
-			datePublished="2016-10-05T00:21:56-0500"
+			datePublished="2016-10-05T00:21:56-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			repository="https://aorepo.org/maven2/"
@@ -168,7 +169,7 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.2"
-			datePublished="2016-09-11T17:45:24-0500"
+			datePublished="2016-09-11T17:45:24-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			repository="https://aorepo.org/maven2/"
@@ -183,7 +184,7 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.1"
-			datePublished="2016-09-03T11:40:41-0500"
+			datePublished="2016-09-03T11:40:41-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			repository="https://aorepo.org/maven2/"
@@ -198,7 +199,7 @@ along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses />.
 		<changelog:release
 			projectName="@{documented.name}"
 			version="1.0"
-			datePublished="2016-08-30T19:19:59-0500"
+			datePublished="2016-08-30T19:19:59-05:00"
 			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
 			repository="https://aorepo.org/maven2/"
