@@ -1,6 +1,6 @@
 /*
  * pragmatickm-task-style - Default style for tasks nested within SemanticCMS pages and elements.
- * Copyright (C) 2016, 2017, 2020  AO Industries, Inc.
+ * Copyright (C) 2016, 2017, 2020, 2021  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -22,9 +22,9 @@
  */
 package com.pragmatickm.task.style;
 
-import com.aoindustries.web.resources.registry.Group;
-import com.aoindustries.web.resources.registry.Style;
-import com.aoindustries.web.resources.servlet.RegistryEE;
+import com.aoapps.web.resources.registry.Group;
+import com.aoapps.web.resources.registry.Style;
+import com.aoapps.web.resources.servlet.RegistryEE;
 import com.pragmatickm.task.model.Task;
 import com.semanticcms.core.servlet.SemanticCMS;
 import javax.servlet.ServletContext;
