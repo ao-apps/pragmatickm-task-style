@@ -18,7 +18,7 @@
  * GNU Lesser General Public License for more details.
  *
  * You should have received a copy of the GNU Lesser General Public License
- * along with pragmatickm-task-style.  If not, see <http://www.gnu.org/licenses/>.
+ * along with pragmatickm-task-style.  If not, see <https://www.gnu.org/licenses/>.
  */
 package com.pragmatickm.task.style;
 
