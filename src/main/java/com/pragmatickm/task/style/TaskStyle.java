@@ -36,31 +36,31 @@ import javax.servlet.annotation.WebListener;
 @WebListener("Registers the styles for tasks in SemanticCMS in RegistryEE and SemanticCMS.")
 public class TaskStyle implements ServletContextListener {
 
-	public static final Group.Name RESOURCE_GROUP = new Group.Name("pragmatickm-task-style");
+  public static final Group.Name RESOURCE_GROUP = new Group.Name("pragmatickm-task-style");
 
-	// TODO: Change to Group.Name once we have group-level ordering
-	public static final Style PRAGMATICKM_TASK = new Style("/pragmatickm-task-style/pragmatickm-task.css");
+  // TODO: Change to Group.Name once we have group-level ordering
+  public static final Style PRAGMATICKM_TASK = new Style("/pragmatickm-task-style/pragmatickm-task.css");
 
-	@Override
-	public void contextInitialized(ServletContextEvent event) {
-		ServletContext servletContext = event.getServletContext();
+  @Override
+  public void contextInitialized(ServletContextEvent event) {
+    ServletContext servletContext = event.getServletContext();
 
-		// Add our CSS file
-		RegistryEE.Application.get(servletContext)
-			.activate(RESOURCE_GROUP) // TODO: Activate as-needed
-			.getGroup(RESOURCE_GROUP)
-			.styles
-			.add(PRAGMATICKM_TASK);
+    // Add our CSS file
+    RegistryEE.Application.get(servletContext)
+      .activate(RESOURCE_GROUP) // TODO: Activate as-needed
+      .getGroup(RESOURCE_GROUP)
+      .styles
+      .add(PRAGMATICKM_TASK);
 
-		SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
-		// Add link CSS class
-		semanticCMS.addLinkCssClass(Task.class, "pragmatickm-task-link");
-		// Add list item CSS class
-		semanticCMS.addListItemCssClass(Task.class, "pragmatickm-task-list-item");
-	}
+    SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
+    // Add link CSS class
+    semanticCMS.addLinkCssClass(Task.class, "pragmatickm-task-link");
+    // Add list item CSS class
+    semanticCMS.addListItemCssClass(Task.class, "pragmatickm-task-list-item");
+  }
 
-	@Override
-	public void contextDestroyed(ServletContextEvent event) {
-		// Do nothing
-	}
+  @Override
+  public void contextDestroyed(ServletContextEvent event) {
+    // Do nothing
+  }
 }
