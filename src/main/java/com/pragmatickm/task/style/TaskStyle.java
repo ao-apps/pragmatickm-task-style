@@ -33,6 +33,9 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+/**
+ * Registers the styles for tasks in {@link RegistryEE} and {@link SemanticCMS}.
+ */
 @WebListener("Registers the styles for tasks in SemanticCMS in RegistryEE and SemanticCMS.")
 public class TaskStyle implements ServletContextListener {
 
@@ -49,14 +52,14 @@ public class TaskStyle implements ServletContextListener {
     RegistryEE.Application.get(servletContext)
         .activate(RESOURCE_GROUP)// TODO: Activate as-needed
         .getGroup(RESOURCE_GROUP)
-        .styles
-        .add(PRAGMATICKM_TASK);
+            .styles
+            .add(PRAGMATICKM_TASK);
 
-    SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
+    SemanticCMS semanticCms = SemanticCMS.getInstance(servletContext);
     // Add link CSS class
-    semanticCMS.addLinkCssClass(Task.class, "pragmatickm-task-link");
+    semanticCms.addLinkCssClass(Task.class, "pragmatickm-task-link");
     // Add list item CSS class
-    semanticCMS.addListItemCssClass(Task.class, "pragmatickm-task-list-item");
+    semanticCms.addListItemCssClass(Task.class, "pragmatickm-task-list-item");
   }
 
   @Override
