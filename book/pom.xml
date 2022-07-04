@@ -36,15 +36,15 @@ along with pragmatickm-task-style.  If not, see <https://www.gnu.org/licenses/>.
     <module.name>com.pragmatickm.task.style.book</module.name>
     <!-- These values are copied from the project being documented -->
     <documented.artifactId>pragmatickm-task-style</documented.artifactId>
-    <documented.name>PragmaticKM Task Style²</documented.name>
+    <documented.name>PragmaticKM Task Style</documented.name>
     <documented.description>Default style for tasks nested within SemanticCMS pages and elements.</documented.description>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
 
-  <name>PragmaticKM Task Style² Book</name>
+  <name>PragmaticKM Task Style Book</name>
   <url>https://pragmatickm.com/task/style/</url>
-  <description>Documentation for PragmaticKM Task Style² in SemanticCMS format.</description>
+  <description>Documentation for PragmaticKM Task Style in SemanticCMS format.</description>
   <inceptionYear>2013</inceptionYear>
 
   <licenses>

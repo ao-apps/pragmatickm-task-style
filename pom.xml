@@ -46,7 +46,7 @@ along with pragmatickm-task-style.  If not, see <https://www.gnu.org/licenses/>.
     <sonar.coverage.exclusions>**.*</sonar.coverage.exclusions>
   </properties>
 
-  <name>PragmaticKM Task Style²</name>
+  <name>PragmaticKM Task Style</name>
   <url>https://pragmatickm.com/task/style/</url>
   <description>Default style for tasks nested within SemanticCMS pages and elements.</description>
   <inceptionYear>2013</inceptionYear>
