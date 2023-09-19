@@ -41,6 +41,9 @@ along with pragmatickm-task-style.  If not, see <https://www.gnu.org/licenses/>.
     <documented.artifactId>pragmatickm-task-style</documented.artifactId>
     <documented.name>PragmaticKM Task Style</documented.name>
     <documented.description>Default style for tasks nested within SemanticCMS pages and elements.</documented.description>
+    <javadoc.breadcrumbs><![CDATA[<a target="${javadoc.target}" href="https://pragmatickm.com/">PragmaticKM</a>
+/ <a target="${javadoc.target}" href="https://pragmatickm.com/task/">Task</a>
+/ <a target="${javadoc.target}" href="${project.url}">Style</a>]]></javadoc.breadcrumbs>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
     <!-- SonarQube -->
