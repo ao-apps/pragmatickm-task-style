@@ -23,7 +23,7 @@ Default style for tasks nested within [SemanticCMS](https://github.com/ao-apps/s
 * [Project Home](https://pragmatickm.com/task/style/)
 * [Changelog](https://pragmatickm.com/task/style/changelog)
 * [API Docs](https://pragmatickm.com/task/style/apidocs/)
-* [Maven Central Repository](https://central.sonatype.com/artifact/com.pragmatickm/pragmatickm-task-style)
+* [Central Repository](https://central.sonatype.com/artifact/com.pragmatickm/pragmatickm-task-style)
 * [GitHub](https://github.com/ao-apps/pragmatickm-task-style)
 
 ## Contact Us
