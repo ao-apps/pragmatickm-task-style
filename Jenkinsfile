@@ -32,7 +32,7 @@ def upstreamProjects = [
   '../../oss/web-resources/servlet-javaee', // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-servlet</artifactId>
   // No Jenkins: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId>
   'model', // <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-task-model</artifactId>
-  '../../semanticcms-1.x/core/servlet', // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId>
+  '../../semanticcms-2.x/core/servlet', // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId>
 
   // BOM
   '../../oss/javaee-web-api-bom', // <groupId>com.aoapps</groupId><artifactId>javaee-web-api-bom</artifactId>
