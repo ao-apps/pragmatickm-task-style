@@ -29,7 +29,7 @@ def upstreamProjects = [
 
   // Direct
   '../../oss/web-resources/registry', // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-registry</artifactId>
-  '../../oss/web-resources/servlet-javaee', // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-servlet</artifactId>
+  '../../oss/web-resources/servlet', // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-servlet</artifactId>
   // No Jenkins: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId>
   'model', // <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-task-model</artifactId>
   '../../semanticcms/core/renderer-html', // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId>
