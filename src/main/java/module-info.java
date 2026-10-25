@@ -21,11 +21,12 @@
  * along with pragmatickm-task-style.  If not, see <https://www.gnu.org/licenses/>.
  */
 module com.pragmatickm.task.style {
-  exports com.pragmatickm.task.style;
   // Direct
   requires com.aoapps.web.resources.registry; // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-registry</artifactId>
   requires com.aoapps.web.resources.servlet; // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-servlet</artifactId>
   requires jakarta.servlet; // <groupId>jakarta.servlet</groupId><artifactId>jakarta.servlet-api</artifactId>
   requires com.pragmatickm.task.model; // <groupId>com.pragmatickm</groupId><artifactId>pragmatickm-task-model</artifactId>
   requires com.semanticcms.core.servlet; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId>
+
+  exports com.pragmatickm.task.style;
 }
